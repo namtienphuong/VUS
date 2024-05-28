@@ -12,6 +12,22 @@ html, body {
     clear: both;
 }
 
+h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 16px;
+}
+
+.line{
+    background-image: url('../img/line.png');
+    height: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+}
+
 /* header */
 .header__logoIMG {
     float: left;
@@ -32,12 +48,18 @@ html, body {
 
 .header__navbar ul li{
     display: inline;
+    
 }
 
 .header__navbar ul a{
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.13vw; /*sử dụng đơn vị vw sẽ giúp xử lý được vấn đề responsive size chữ trên màn hình laptop to nhỏ, 1vw=1% kích thước màn hình, vw đi theo chiều ngang của màn hình, vh đi theo chiều cao của trình duyệt*/
     color: #636363;
     text-transform: uppercase;
+    padding: 0 0.3em; /*padding cho ở thẻ a mục đích là để kích thước có thể co giãn được, sử dụng đơn vị em*/
+    /* nếu font size là vw thì 1em = 1.13vw*/
+    /* nếu font size là px thì 1em = 16px */
 }
 
 .header__navbar ul li:hover{
@@ -46,4 +68,79 @@ html, body {
 
 .header__navbar ul .active{
     border-bottom: 2px solid #b31c25;
+}
+
+/*carousel*/
+.carousel{
+    background-image: url('../img/slider_1.png');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+
+/* intro */
+.intro p{
+    text-align: center;
+    color: #636363;
+    line-height: 25px;
+    padding: 0 25px;
+}
+
+/* programs */
+.programs__item{
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.programs__item img{
+    width: 100%;
+}
+
+.programs__item h3{
+    color: #b31c25;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 10px 0 5px;
+}
+
+.programs__item p{
+    margin: 0;
+    font-size: 14px;
+}
+
+/* news */
+.news__left, .news__right{
+    float: left;
+    width: 50%;
+}
+
+.news__text img{
+    width: 100%;
+    display: block;
+}
+
+.news__text p{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+/* footer */
+.footer{
+    background-color: #b31c25;
+    color: white;
+    padding: 20px 50px;
+}
+
+.footer img{
+    float: left;
+}
+
+.footer p{
+    float: right;
+    width: 50%;
+    word-spacing: 2px;
+    text-align: justify;
 }
