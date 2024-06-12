@@ -132,7 +132,7 @@ h2{
 
 .news__text p{
     position: absolute;
-    bottom: 10px;
+    bottom: 8px;
     left: 0px;
     color: white;
     text-transform: uppercase;
@@ -149,13 +149,14 @@ h2{
 .news__small-item{
     float: left;
     width: 50%;
-    padding: 0 5px 10px;  /*do tác động của position nên padding không tác động được lên thẻ <p> bên trong của thẻ new__text do đó phải padding lên thẻ cha bên ngoài để tác động lên toàn bộ thẻ news__text*/
+    padding: 0 8.5px 10px;  /*do tác động của position nên padding không tác động được lên thẻ <p> bên trong của thẻ new__text do đó phải padding lên thẻ cha bên ngoài để tác động lên toàn bộ thẻ news__text*/
 }
 
 .news__text hr{
     margin: 0;
     height: 5px;
     background-color: #b31c25;
+    margin-top: 3px;
 }
 
 /* footer */
